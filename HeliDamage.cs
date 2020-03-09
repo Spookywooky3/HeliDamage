@@ -1,20 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Oxide.Core;
-using Oxide.Core.Libraries.Covalence;
-using Oxide.Game.Rust.Cui;
-using System.Reflection;
-using Oxide.Core.Plugins;
-using Oxide.Core.CSharp;
-using UnityEngine.UI;
-using System.Collections;
-using Oxide.Game.Rust.Cui;
-using Oxide.Core.Configuration;
+﻿//  Copyright 2020 gitub.com/spookywooky3
+
+//  Licensed under the Apache License, Version 2.0 (the "License");
+//  you may not use this file except in compliance with the License.
+//  You may obtain a copy of the License at
+
+//       http://www.apache.org/licenses/LICENSE-2.0
+
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//  See the License for the specific language governing permissions and
+//  limitations under the License.
+
+using System;
 using Oxide.Core.Libraries.Covalence;
 using Rust;
-using System.IO;
-using UnityEngine;
 
 namespace Oxide.Plugins
 {
@@ -38,8 +38,8 @@ namespace Oxide.Plugins
         {
             return new PluginConfig
             {
-                minicopterDamageMultiplier = 1.0f,
-                scrapDamageMultiplier = 1.0f,
+                minicopterDamageMultiplier = 0.0f,
+                scrapDamageMultiplier = 0.0f,
                 decayMultiplier = 1.0f,
                 samDamage = true,
                 heliDecay = true
