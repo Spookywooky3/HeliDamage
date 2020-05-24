@@ -117,18 +117,5 @@ namespace Oxide.Plugins
                 return false;
             }
         }
-
-        [Command("helidamage.reload", "hd.reload")]
-        void ConfigReload(IPlayer player, string command, string[] args)
-        {
-            if (player.HasPermission("helidamage.reload") || player.IsAdmin)
-            {
-                config = Config.ReadObject<PluginConfig>();
-            }
-            else
-            {
-                player.Reply($"You don't have the permission helidamage.reload");
-            }
-        }
     }
 }
